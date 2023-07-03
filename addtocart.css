@@ -1,0 +1,283 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    font-size: 18px;
+}
+body
+{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.header{
+    height: 350PX;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1327513606/vector/robot-cars-pyramid-helicopter-rocket-blocks-in-boy-toy-store-window-colourful-storefront.jpg?s=612x612&w=0&k=20&c=IzxRqyo0S7oBSNT3vOfZrmNoFqs04CXOFSGth1H1UJs=);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+
+}
+.header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(0 0 0 /60%);
+    z-index: 3;
+}
+.header .logo{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: flex;
+    align-items: center;
+    justify-content: center;
+   size: 1px;
+  
+}
+
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-self: start;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+
+}
+.fa-solid{
+    color: rgb(5, 58, 58);
+}
+.fa-trash{
+    color: rgb(247 247 247);
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color:rgb(5, 58, 58);
+    color: white;
+}
+.container{
+    display: flex;
+    margin-bottom: 30px;
+}
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sidebar{
+    width: 40%;
+    height: 42%;
+    border-radius: 33px 26px;
+    background-color: rgb(5 58 58 / 93%);
+    margin-left: 27px;
+    border-style: groove;
+    padding: 15px;
+    top: 70px;
+    position: sticky;
+    text-align: center;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    overflow-y: scroll;
+}
+.head{
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cancel{
+    width: 52px;
+}
+.foot{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #444;
+}
+.box{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    height: 362px;
+    width: 312px;
+    justify-content: space-between;
+    border: 1px solid rgb(5, 58, 58);
+    border-radius: 38px;
+    padding: 15px;
+    animation: move 5s 5s linear;
+}
+.box:hover {
+    box-shadow:0 0 25px rgb(33 33 33 / 66%);
+  }
+@keyframes move {
+    frome{
+       background-color: rgb(5, 58, 58);
+       
+    }
+    to {
+        background-color:white;
+        
+    }
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(5, 58, 58);
+    padding: 5px 1px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #444;
+}
+.cart-Item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid wheat;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgb(5, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border: radius 20px;
+
+}.fa-trash:hover{
+    cursor: pointer;
+    color: #444;
+}
+ .cont1{
+    width: 100%;
+    padding: 10px;
+ }
+ .cont2{
+    background-color: #47666D;
+    width: 100%;
+    position: relative;
+ } 
+ .desc{
+    display: contents;
+ }
+ .desc p{
+    margin: 15px;
+    border: 3px solid;
+    background-color: #efebeb;
+    padding: 35px;
+    border-radius: 15px;
+    line-height: 1.6;
+ }
+ .desc h3{
+    font-weight: normal;
+    color: currentColor;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 15px
+ }
+.desc img{}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #47666D;
+    color: white;
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>toy toon</title>
+    <link rel="stylesheet" href="addtocart.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <button  onclick="openForm()" style="width: 90px;"><img src="html/icons8-cart-50.png" alt="" width="30">   <p id="count">0</p></button>
+      </div>
+    <div class="header">
+        <div class="overlay">
+            <img src="logo2.png" sizes="20px" alt="logo">
+        </div>
+    </div>
+        <div class="cont2">
+            <div class="container">
+
+                <div id="root">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="sidebar" id="nav">
+                    <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                        <p id="count-1">0</p>
+                    </div>
+                    <div class="head">
+                        <p>My Cart</p>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                    <div id="cartItem">empty</div>
+                    <div class="foot">
+                        <button type="submit" name="chik" class="chik">chick</button>
+                        <hً3>total</h3>
+                            <h2 id="total">ل.س 0.00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="addtocart.js"></script>
+</body>
+
+</html>
